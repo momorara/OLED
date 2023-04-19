@@ -1,0 +1,1635 @@
+[
+    {
+        "id": "dd2017e9.1622b8",
+        "type": "tab",
+        "label": "LED+SW",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5010b6a2.5a7b68",
+        "type": "tab",
+        "label": "状態表示",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "dbf3b8ba.80c6c8",
+        "type": "tab",
+        "label": "OLED表示",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a757053b.5f7438",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "c396bec2.67068",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c396bec2.67068",
+        "type": "ui_tab",
+        "name": "LED+SW",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "58f7389c96c81162",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED ダッシュボード",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "YYYY/MM/DD",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e5a3bdc8.169cc",
+        "type": "mqtt-broker",
+        "name": "Free Public MQTT 5 Broker Server",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "tls": "4ad98a91.f81c14",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "dfd49bd6.cc2368",
+        "type": "mqtt-broker",
+        "name": "Free Public MQTT 5 Broker Server",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "tls": "544a6b04.86de24",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "e7db4c84.3f1de",
+        "type": "ui_group",
+        "name": "状態表示",
+        "tab": "dc755b72.c0f8a8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4ad98a91.f81c14",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    },
+    {
+        "id": "544a6b04.86de24",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    },
+    {
+        "id": "dc755b72.c0f8a8",
+        "type": "ui_tab",
+        "name": "状態表示",
+        "icon": "dashboard",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "efe4dfaf.b734d",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "76e50a6c.781644",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "76e50a6c.781644",
+        "type": "ui_tab",
+        "name": "OLED表示",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "70e90c4b.d4e774",
+        "type": "rpi-gpio in",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "pin": "6",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "35aab837.6990b8"
+            ]
+        ]
+    },
+    {
+        "id": "361d7338.725f5c",
+        "type": "rpi-gpio out",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "pin": "27",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 900,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f8ba693.f069898",
+        "type": "inject",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "361d7338.725f5c"
+            ]
+        ]
+    },
+    {
+        "id": "26f7a23f.9bdefe",
+        "type": "inject",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "361d7338.725f5c"
+            ]
+        ]
+    },
+    {
+        "id": "9318b375.362e2",
+        "type": "ui_button",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "group": "a757053b.5f7438",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "1-LED off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "848afa4e.e1b718"
+            ]
+        ]
+    },
+    {
+        "id": "7d30b392.42bf5c",
+        "type": "ui_button",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "group": "a757053b.5f7438",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "1-LED on",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 200,
+        "wires": [
+            [
+                "848afa4e.e1b718"
+            ]
+        ]
+    },
+    {
+        "id": "53d5817c.a817a",
+        "type": "ui_switch",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "label": "switch-1",
+        "tooltip": "",
+        "group": "a757053b.5f7438",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "x": 720,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35aab837.6990b8",
+        "type": "switch",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "bc18a9b5.132ee8"
+            ],
+            [
+                "1fa1232d.074b8d"
+            ]
+        ]
+    },
+    {
+        "id": "bc18a9b5.132ee8",
+        "type": "change",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "53d5817c.a817a"
+            ]
+        ]
+    },
+    {
+        "id": "1fa1232d.074b8d",
+        "type": "change",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 460,
+        "wires": [
+            [
+                "53d5817c.a817a"
+            ]
+        ]
+    },
+    {
+        "id": "848afa4e.e1b718",
+        "type": "delay",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "0.1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "outputs": 1,
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "361d7338.725f5c"
+            ]
+        ]
+    },
+    {
+        "id": "2b7ea961.7efcb6",
+        "type": "rpi-gpio out",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "pin": "17",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 900,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c90dface.2aee28",
+        "type": "inject",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 690,
+        "y": 260,
+        "wires": [
+            [
+                "2b7ea961.7efcb6"
+            ]
+        ]
+    },
+    {
+        "id": "1e6cb7f9.20bdf8",
+        "type": "inject",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 690,
+        "y": 300,
+        "wires": [
+            [
+                "2b7ea961.7efcb6"
+            ]
+        ]
+    },
+    {
+        "id": "17bcbb82.a37d44",
+        "type": "ui_button",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "group": "a757053b.5f7438",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "2-LED off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "b4368bf7.461438"
+            ]
+        ]
+    },
+    {
+        "id": "58f732a2.f57d2c",
+        "type": "ui_button",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "group": "a757053b.5f7438",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "2-LED on",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 300,
+        "wires": [
+            [
+                "b4368bf7.461438"
+            ]
+        ]
+    },
+    {
+        "id": "b4368bf7.461438",
+        "type": "delay",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "0.1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "outputs": 1,
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "2b7ea961.7efcb6"
+            ]
+        ]
+    },
+    {
+        "id": "5ca10761.64efe8",
+        "type": "inject",
+        "z": "dd2017e9.1622b8",
+        "name": "起動時",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [
+                "29aec783.48cfc8"
+            ]
+        ]
+    },
+    {
+        "id": "29aec783.48cfc8",
+        "type": "template",
+        "z": "dd2017e9.1622b8",
+        "name": "初期値 off 設定",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "0",
+        "output": "str",
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "848afa4e.e1b718",
+                "b4368bf7.461438"
+            ]
+        ]
+    },
+    {
+        "id": "4ab9767e.2e64c8",
+        "type": "comment",
+        "z": "dd2017e9.1622b8",
+        "name": "SW",
+        "info": "",
+        "x": 170,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "6a6ab9fc.3b0be8",
+        "type": "comment",
+        "z": "dd2017e9.1622b8",
+        "name": "LED",
+        "info": "",
+        "x": 170,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "bb2455ef.ece0e8",
+        "type": "rpi-gpio in",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "pin": "5",
+        "intype": "tri",
+        "debounce": "25",
+        "read": true,
+        "bcm": true,
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "c08e4951.683328"
+            ]
+        ]
+    },
+    {
+        "id": "d33e483b.256228",
+        "type": "ui_switch",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "label": "switch-2",
+        "tooltip": "",
+        "group": "a757053b.5f7438",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "x": 720,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c08e4951.683328",
+        "type": "switch",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "fe2e44c6.2f0e18"
+            ],
+            [
+                "d5fc7a28.60cbe8"
+            ]
+        ]
+    },
+    {
+        "id": "fe2e44c6.2f0e18",
+        "type": "change",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "d33e483b.256228"
+            ]
+        ]
+    },
+    {
+        "id": "d5fc7a28.60cbe8",
+        "type": "change",
+        "z": "dd2017e9.1622b8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 540,
+        "wires": [
+            [
+                "d33e483b.256228"
+            ]
+        ]
+    },
+    {
+        "id": "b54fad0f.cdc87",
+        "type": "mqtt out",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "topic": "testmqtt/OLED/temp002",
+        "qos": "0",
+        "retain": "",
+        "broker": "e5a3bdc8.169cc",
+        "x": 1170,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8460e807.0ce978",
+        "type": "inject",
+        "z": "5010b6a2.5a7b68",
+        "name": "1分周期",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/home/tk",
+        "payloadType": "str",
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "189352e6.cc7f0d"
+            ]
+        ]
+    },
+    {
+        "id": "78f25d20.53bd04",
+        "type": "comment",
+        "z": "5010b6a2.5a7b68",
+        "name": "1分周期に温度を取得する。エラーがあっても1分後にデータを取得できる。",
+        "info": "1分周期にデータを取得していると\nエラーをキャッチしてリトライしなくても、ファィルがあればデータを取得できる。\nテイル読み込みよりエラーに強い。",
+        "x": 690,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "83cd957a.7eb258",
+        "type": "file in",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "d38fcad6.0e2568"
+            ]
+        ]
+    },
+    {
+        "id": "3ab2d983.e025d6",
+        "type": "file in",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "4d4ad749.a21688"
+            ]
+        ]
+    },
+    {
+        "id": "d38fcad6.0e2568",
+        "type": "csv",
+        "z": "5010b6a2.5a7b68",
+        "name": "cpu_temp",
+        "sep": ":",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "cpu_temp",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 720,
+        "y": 320,
+        "wires": [
+            [
+                "73acbd92.f4f0e4",
+                "4efd42d8.afb0cc"
+            ]
+        ]
+    },
+    {
+        "id": "4d4ad749.a21688",
+        "type": "csv",
+        "z": "5010b6a2.5a7b68",
+        "name": "cpu_rate",
+        "sep": ":",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "cpu_rate",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 720,
+        "y": 380,
+        "wires": [
+            [
+                "70fcce49.57818",
+                "4efd42d8.afb0cc"
+            ]
+        ]
+    },
+    {
+        "id": "165f1912.1e38d7",
+        "type": "debug",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "5221ce13.1639b",
+        "type": "change",
+        "z": "5010b6a2.5a7b68",
+        "name": "OLED",
+        "rules": [
+            {
+                "t": "set",
+                "p": "folder",
+                "pt": "msg",
+                "to": "OLED",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "6a892cde.7fe7f4",
+                "260ce89d.495008"
+            ]
+        ]
+    },
+    {
+        "id": "384020f9.456b8",
+        "type": "comment",
+        "z": "5010b6a2.5a7b68",
+        "name": "user",
+        "info": "",
+        "x": 190,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "189352e6.cc7f0d",
+        "type": "change",
+        "z": "5010b6a2.5a7b68",
+        "name": "pi",
+        "rules": [
+            {
+                "t": "set",
+                "p": "user",
+                "pt": "msg",
+                "to": "pi",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "5221ce13.1639b"
+            ]
+        ]
+    },
+    {
+        "id": "6ce484d.338627c",
+        "type": "comment",
+        "z": "5010b6a2.5a7b68",
+        "name": "folder",
+        "info": "",
+        "x": 350,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6a892cde.7fe7f4",
+        "type": "template",
+        "z": "5010b6a2.5a7b68",
+        "name": "cpu_temp_data.txt",
+        "field": "filename",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "/home/{{user}}/{{folder}}/cpu_temp_data.txt\n",
+        "output": "str",
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "83cd957a.7eb258"
+            ]
+        ]
+    },
+    {
+        "id": "260ce89d.495008",
+        "type": "template",
+        "z": "5010b6a2.5a7b68",
+        "name": "cpu_temp_data.txt",
+        "field": "filename",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "/home/{{user}}/{{folder}}/cpu_rate_data.txt\n",
+        "output": "str",
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "3ab2d983.e025d6"
+            ]
+        ]
+    },
+    {
+        "id": "ea23ab4d.626ed8",
+        "type": "comment",
+        "z": "5010b6a2.5a7b68",
+        "name": "filenameプロパティでファイルネームを渡す。",
+        "info": "",
+        "x": 450,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9dacc8a3.6a2de8",
+        "type": "mqtt out",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "topic": "testmqtt/OLED/temp999",
+        "qos": "",
+        "retain": "",
+        "broker": "dfd49bd6.cc2368",
+        "x": 1290,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "273466a2.4f48ea",
+        "type": "inject",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3",
+        "payloadType": "num",
+        "x": 1110,
+        "y": 320,
+        "wires": [
+            [
+                "9dacc8a3.6a2de8"
+            ]
+        ]
+    },
+    {
+        "id": "73acbd92.f4f0e4",
+        "type": "calculator",
+        "z": "5010b6a2.5a7b68",
+        "name": "1:1",
+        "inputMsgField": "payload.cpu_temp",
+        "outputMsgField": "payload",
+        "operation": "div",
+        "constant": "1",
+        "round": false,
+        "decimals": 0,
+        "x": 892,
+        "y": 320,
+        "wires": [
+            [
+                "9e8b7c2b.0361",
+                "165f1912.1e38d7",
+                "b54fad0f.cdc87"
+            ]
+        ]
+    },
+    {
+        "id": "70fcce49.57818",
+        "type": "calculator",
+        "z": "5010b6a2.5a7b68",
+        "name": "1:1",
+        "inputMsgField": "payload.cpu_rate",
+        "outputMsgField": "payload",
+        "operation": "div",
+        "constant": "1",
+        "round": false,
+        "decimals": 0,
+        "x": 891,
+        "y": 379,
+        "wires": [
+            [
+                "a44aaf84.2976a",
+                "165f1912.1e38d7"
+            ]
+        ]
+    },
+    {
+        "id": "9e8b7c2b.0361",
+        "type": "ui_gauge",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "group": "e7db4c84.3f1de",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "CPU温度",
+        "label": "units",
+        "format": "{{value}}度",
+        "min": "0",
+        "max": "80",
+        "colors": [
+            "#3d48e1",
+            "#1ef125",
+            "#e7440d"
+        ],
+        "seg1": "40",
+        "seg2": "60",
+        "x": 1100,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a44aaf84.2976a",
+        "type": "ui_gauge",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "group": "e7db4c84.3f1de",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "CPU使用率",
+        "label": "units",
+        "format": "{{value}}%",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#3d48e1",
+            "#41ec7d",
+            "#e7440d"
+        ],
+        "seg1": "20",
+        "seg2": "50",
+        "x": 1110,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4efd42d8.afb0cc",
+        "type": "debug",
+        "z": "5010b6a2.5a7b68",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "477702c4.33883c",
+        "type": "comment",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "説明",
+        "info": "通常は、OLED_01.pyにより、cpu温度表示している。\nしかし、flag.txtがある場合は、\ncpu温度表示をせず、flag.txtの内容を表示する。",
+        "x": 120,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "314a4bca.cfed74",
+        "type": "ui_text_input",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "",
+        "label": "OLEDに表示する文字を入力",
+        "tooltip": "",
+        "group": "efe4dfaf.b734d",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "368c231e.5337fc"
+            ]
+        ]
+    },
+    {
+        "id": "116ac307.fa5ecd",
+        "type": "ui_button",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "",
+        "group": "efe4dfaf.b734d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "OLED表示実行",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "74d9465a.70c728"
+            ]
+        ]
+    },
+    {
+        "id": "61e9fbec.6310c4",
+        "type": "ui_button",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "",
+        "group": "efe4dfaf.b734d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "OLED表示中止",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "d0b06959.06b6e8"
+            ]
+        ]
+    },
+    {
+        "id": "b5bc1078.0380f",
+        "type": "inject",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "1分周期",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/home/pi",
+        "payloadType": "str",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "2c73c8ac.5e90f8"
+            ]
+        ]
+    },
+    {
+        "id": "bd78f1be.d98e6",
+        "type": "change",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "OLED",
+        "rules": [
+            {
+                "t": "set",
+                "p": "folder",
+                "pt": "flow",
+                "to": "OLED",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4ce8798.4ff5a8",
+        "type": "comment",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "user",
+        "info": "",
+        "x": 330,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2c73c8ac.5e90f8",
+        "type": "change",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "pi",
+        "rules": [
+            {
+                "t": "set",
+                "p": "user",
+                "pt": "flow",
+                "to": "pi",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "bd78f1be.d98e6"
+            ]
+        ]
+    },
+    {
+        "id": "2f5efb90.9822d4",
+        "type": "comment",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "folder",
+        "info": "",
+        "x": 490,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "368c231e.5337fc",
+        "type": "change",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "disp_string",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "de6a9beb.cad828"
+            ]
+        ]
+    },
+    {
+        "id": "44441d9.dedb3e4",
+        "type": "file",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "flagファイル書込み",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 830,
+        "y": 340,
+        "wires": [
+            [
+                "de6a9beb.cad828"
+            ]
+        ]
+    },
+    {
+        "id": "5c6ffbbc.b10204",
+        "type": "template",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "データセット",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{flow.disp_string}}",
+        "output": "str",
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "44441d9.dedb3e4"
+            ]
+        ]
+    },
+    {
+        "id": "74d9465a.70c728",
+        "type": "template",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "ファイル名設定",
+        "field": "filename",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "/home/{{flow.user}}/{{flow.folder}}/flag.txt",
+        "output": "str",
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "5c6ffbbc.b10204"
+            ]
+        ]
+    },
+    {
+        "id": "d0b06959.06b6e8",
+        "type": "template",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "ファイル名設定",
+        "field": "filename",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "/home/{{flow.user}}/{{flow.folder}}/flag.txt",
+        "output": "str",
+        "x": 400,
+        "y": 400,
+        "wires": [
+            [
+                "10f5f9f0.3b8356"
+            ]
+        ]
+    },
+    {
+        "id": "10f5f9f0.3b8356",
+        "type": "file",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "flagファイル削除",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "de6a9beb.cad828"
+            ]
+        ]
+    },
+    {
+        "id": "de6a9beb.cad828",
+        "type": "debug",
+        "z": "dbf3b8ba.80c6c8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 280,
+        "wires": []
+    }
+]
