@@ -8,3 +8,4 @@ git clone https://github.com/momorara/OLED でラズパイにダウンロード�
 資料は、説明文書・図面フォルダにあります。
 
 2023/4/19 bullseye 11.6  node-red 3.0.2 で動作確認
+   
