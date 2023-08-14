@@ -20,7 +20,7 @@ git clone https://github.com/momorara/OLED<br>
 インストールについては、インストール文書に従いインストールを行ってください。<br>
 
 <h4><<動作環境>></h4>
-2023/4/19 bullseye 11.6  node-red 3.0.2 で動作確認<br>
+<br>
    
 <h4><<使用説明資料>></h4>
 説明書類の中の資料を確認ください。
