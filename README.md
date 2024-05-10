@@ -18,10 +18,12 @@ git clone https://github.com/momorara/OLED<br>
 インストールについては、インストール文書に従いインストールを行ってください。<br>
 
 <h4><<動作環境>></h4>
-2023/8/4 対応OS：Buster版、Bullseye版(〜11.9)での動作を確認しています。<br>
+2023/8/4 対応OS：Buster版、Bullseye版(〜11.7)での動作を確認しています。<br>
 2023/11 bookwormがリリースされ、Legacyがbullseyeとなりました。その時点で何か変更があるのか、こちらでも検証中です。<br>
 少なくともbookwormでの検証はこれからです。<br>
 2024/2/22 Pi5を調達しBookWormで検証しましたが、動作しませんでした。時間がかかりそうです。<br>
+2024/5/10 BookWormに関しては、https://github.com/momorara/OLED_V5　を確認してください。<br>
+Bullseye版(〜11.9)での動作を確認しています。<br>
    
 <h4><<使用説明資料>></h4>
 説明書類の中の資料を確認ください。
