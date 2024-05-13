@@ -10,7 +10,7 @@
  ・サンプルプログラム一覧<br>
 　　　test_LED.py　(Lチカを行います)<br>
 　　　test_sw.py　(SWの押下を確認します)<br>
-　　　test_Servo.py　(サーボを動作させます)<br>
+　　　test_Servo_27.py　(サーボを動作させます)<br>
 　　　breathing_LEDx.py　(LEDを蛍のようにゆっくり点滅させます)<br>
 　　　OLED_01〜5.py　(OLEDに文字、点、四角、線、画像を表示します)<br>
 　　　lib_oled.py　(OLEDに文字、点、四角、線、画像を表示する関数群です)<br>
@@ -27,6 +27,8 @@
 git clone https://github.com/momorara/OLED<br>
 でラズパイにダウンロードしてください。<br>
 インストールについては、インストール文書に従いインストールを行ってください。<br>
+bullseyeまでと、Bookwormでインストール手順が違いますので、注意してください。
+プログラムは同じもので動作します。
 
 <h4><<動作環境>></h4>
 2024/3/5 対応OS：Bullseye版11.9<br>
