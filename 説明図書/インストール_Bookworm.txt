@@ -52,14 +52,19 @@ b.c.は両方仮想環境みたいですが、今後の事を考えるとb.の�
 　　なので、面倒ですが、必要なライブラリは1から入れる必要があります。
 
 
+
+-----------------------------------------------------------------------
 実行する前に"cd"コマンドでホームディレクトリに移動します。
 
 仮想環境V_OLEDを作る
 $ python3 -m venv V_OLED
 
+仮想環境V_OLEDにはいる
+$ source V_OLED/bin/activate
+
 必要なライブラリをイントール
-$ ./V_OLED/bin/pip3 install luma.core
-$ ./V_OLED/bin/pip3 install luma.oled
+$ pip3 install luma.core
+$ pip3 install luma.oled
 
 
 I2cを有効化
@@ -73,30 +78,30 @@ OLED 3c
 と表示されます。
 
 aptで入るライブラリをインストールします
+$ sudo apt-get install fonts-dejavu
+$ sudo apt-get install fonts-ipafont
 
 仮想環境から抜ける
-deactivate
+$ deactivate
 
 外部フォント関係のインストール
-sudo apt install python3-pil # 標準でインストール済みかも
-sudo apt-get install fonts-dejavu
-sudo apt-get install fonts-ipafont
-
+$ sudo apt install python3-pil # 標準でインストール済みかも
 
 プログラムをダウンロード
-git clone https://github.com/momorara/OLED
+$ git clone https://github.com/momorara/OLED
 
 プログラムのディレクトリ OLED へ移動
-cd OLED
+$ cd OLED
 として、ls
-../V_OLED/bin/python OLED_demo.py  としてサンプルプログラムを試してみてください。 
+$ ../V_OLED/bin/python OLED_demo.py  としてサンプルプログラムを試してみてください。 
 OLED以外は仮想環境を使わず実行できます。
-python testLED.py
+$ python testLED.py
 
 もしくは、source V_OLED/bin/activateとして仮想環境に入り
-python OLED_demo.py
+$ python OLED_demo.py
 とする
 
+* 仮想環境でOLED関係以外を実行する場合は、必要なライブラリを仮想環境でインストールする必要があります。
 
 
 
