@@ -9,7 +9,7 @@ sudo raspi-config
 にてi2cを有効にしてください。
 
 基板を装着した状態で
-
+i2cdetect -y 1
 とすると、
 OLED 3c
 と表示されます。
