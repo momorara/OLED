@@ -1,5 +1,6 @@
 2024/04/16　BookWormでのインストール手順 BookWorm 12.5で確認
 2024/07/30  BookWorm 12.6で確認
+2025/1/7 Bookworm版12.8にて動作確認
 
 
 Pythonに関して、BookWormからは仮想環境がデフォルト導入された。
@@ -93,7 +94,7 @@ cd OLED
 として、ls
 ../V_OLED/bin/python OLED_demo.py  としてサンプルプログラムを試してみてください。 
 OLED以外は仮想環境を使わず実行できます。
-python test_LED.py
+python testLED.py
 
 もしくは、source V_OLED/bin/activateとして仮想環境に入り
 python OLED_demo.py
