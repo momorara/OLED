@@ -93,7 +93,7 @@ cd OLED
 として、ls
 ../V_OLED/bin/python OLED_demo.py  としてサンプルプログラムを試してみてください。 
 OLED以外は仮想環境を使わず実行できます。
-python testLED.py
+python test_LED.py
 
 もしくは、source V_OLED/bin/activateとして仮想環境に入り
 python OLED_demo.py
