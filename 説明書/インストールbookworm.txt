@@ -57,6 +57,8 @@ b.c.は両方仮想環境みたいですが、今後の事を考えるとb.の�
 
 実行する前に"cd"コマンドでホームディレクトリに移動します。
 
+-------------- 実際のインストール方法　---------------------------
+
 仮想環境V_OLEDを作る
 $ python3 -m venv V_OLED
 
@@ -76,30 +78,22 @@ OLED 3c
 と表示されます。
 
 aptで入るライブラリをインストールします
-
-仮想環境から抜ける
-deactivate
-
 外部フォント関係のインストール
-sudo apt install python3-pil # 標準でインストール済みかも
 sudo apt-get install fonts-dejavu
 sudo apt-get install fonts-ipafont
-
 
 プログラムをダウンロード
 git clone https://github.com/momorara/OLED
 
 プログラムのディレクトリ OLED へ移動
 cd OLED
-として、ls
+として、lsでファイルを確認
+
 ../V_OLED/bin/python OLED_demo.py  としてサンプルプログラムを試してみてください。 
+
 OLED以外は仮想環境を使わず実行できます。
 python testLED.py
 
 もしくは、source V_OLED/bin/activateとして仮想環境に入り
 python OLED_demo.py
 とする
-
-
-
-
