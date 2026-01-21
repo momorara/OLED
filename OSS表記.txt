@@ -1,0 +1,8 @@
+【使用ソフトウェアについて】
+
+本教材／ソフトウェアでは、以下のオープンソースソフトウェアを使用しています。
+
+- Python Standard Library（PSF License）
+- Pillow（HPND License）
+- gpiozero（BSD 3-Clause License）
+- smbus2（MIT License）
